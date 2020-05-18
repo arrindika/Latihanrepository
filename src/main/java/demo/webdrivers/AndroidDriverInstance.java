@@ -4,6 +4,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -17,9 +18,10 @@ public class AndroidDriverInstance {
         caps.setCapability("platformName","Android");
         caps.setCapability("platformVersion","8.1.0");
         caps.setCapability("deviceName","device");
-        caps.setCapability("udid","emulator-5554");
+        caps.setCapability("udid","ce051605e305e41205");
         caps.setCapability("autoGrandPermissions",true);
-        caps.setCapability("app", "/Users/bhaskaram/IdeaProjects/Project-X2/APP/SigmaCard_v0.3.apk");
+        caps.setCapability("app",
+                System.getProperty("user.dir") + File.separator + "APP" + File.separator + "SigmaCard_v0.5.apk");
         caps.setCapability("automationName", "UiAutomator2");
         caps.setCapability("newCommandTimeout", 120);
         try {
