@@ -100,13 +100,13 @@ public class ProfilePageStepDefinitions {
 
     @Then("User see error that confirm password is empty")
     public void userSeeErrorThatConfirmPasswordIsEmpty() {
-        String text = profilePage.checkInputNewPassword();
+        String text = profilePage.checkInputConfirmPasswor();
         Assert.assertTrue(text.contains("This Field Cannot Be Empty"));
     }
 
     @And("User see error that new password is empty")
     public void userSeeErrorThatNewPasswordIsEmpty() {
-        String text = profilePage.checkInputConfirmPasswor();
+        String text = profilePage.checkInputNewPassword();
         Assert.assertTrue(text.contains("This Field Cannot Be Empty"));
     }
 }
