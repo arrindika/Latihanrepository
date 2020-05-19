@@ -3,6 +3,7 @@ package demo.pages;
 import demo.webdrivers.AndroidDriverInstance;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidElement;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -99,6 +100,18 @@ public class TopUpHomepage {
 
     public void clickOkDialogBox(){
         AndroidDriverInstance.androidDriver.findElement(MobileBy.id("android:id/button1")).click();
+    }
+
+    public void clickHistoryPage(){
+        AndroidDriverInstance.androidDriver.findElement(By.id("menuHistory")).click();
+    }
+
+    public void clickCompletedTab(){
+        AndroidDriverInstance.androidDriver.findElement(By.xpath("//androidx.appcompat.app.ActionBar.Tab[@content-desc='Completed']")).click();
+    }
+
+    public void clickLastTransaction(){
+        AndroidDriverInstance.androidDriver.findElement(By.xpath("//androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]")).click();
     }
 }
 

@@ -1,11 +1,13 @@
 package demo.steps;
 
 import demo.pages.TopUpHomepage;
+import demo.webdrivers.AndroidDriverInstance;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 
 import java.security.Key;
 
@@ -89,4 +91,10 @@ public class TopUpStepsDefinition {
         String getText = topUpHomepage.checkCardNumber();
         Assert.assertEquals(getText, Keyword);
     }
+
+    @And("User click history page button on main page")
+    public void userClickHistoryPageButtonOnMainPage() {
+        topUpHomepage.clickHistoryPage();
+    }
+
 }

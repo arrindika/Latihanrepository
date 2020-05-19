@@ -1,4 +1,4 @@
-@Android @Profile @Logout
+@Android @Logout
 Feature: Log Out
 
   Background:

@@ -1,4 +1,4 @@
-@Android @Profile @ChangePassword
+@Android @ChangePassword
 Feature: Change Password
 
   Background:
@@ -9,8 +9,8 @@ Feature: Change Password
     And User is in homepage
     And User click Profile Button on Homepage
 
-#Positive Scenario
 
+  @Positive
   Scenario: User Change Password with right new password format and match confirm password
     Given User is On Profile Page
     When User click Change Password on Profile Page
@@ -19,8 +19,8 @@ Feature: Change Password
     And User click change password button on change password page
     Then success change password
 
-#Negative Scenario
 
+  @Negative
   Scenario: User Change Password with right new password format and not match confirm password
     Given User is On Profile Page
     When User click Change Password on Profile Page

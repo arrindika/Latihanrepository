@@ -2,7 +2,7 @@
 Feature: Sign In
 
   #Positive Scenario
-  @Check
+  @Positive
   Scenario: User Sign In with correct email and correct password
     Given User is on E-money Sign In Page
     When User input email "ltfrzky@gmail.com" on email or phone text field
@@ -32,7 +32,7 @@ Feature: Sign In
     Then User is in homepage
 
   #Negative Scenario
-
+  @Negative
   Scenario: User Sign In with wrong email without @ and correct password
     Given User is on E-money Sign In Page
     When User input email "reza.rahardiangmail.com" on email or phone text field

@@ -18,7 +18,7 @@ public class AndroidDriverInstance {
         caps.setCapability("platformName","Android");
         caps.setCapability("platformVersion","8.1.0");
         caps.setCapability("deviceName","device");
-        caps.setCapability("udid","ce051605e305e41205");
+        caps.setCapability("udid","RR8M905K31Z");
         caps.setCapability("autoGrandPermissions",true);
         caps.setCapability("app",
                 System.getProperty("user.dir") + File.separator + "APP" + File.separator + "SigmaCard_v0.5.apk");

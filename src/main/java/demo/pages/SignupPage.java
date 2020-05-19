@@ -48,8 +48,10 @@ public class SignupPage {
     }
 
     public String successMessage(){
-        waitAbit(3000);
-        WebElement successMessage = androidDriver.findElement(By.id("alertTitle"));
+        //waitAbit(5000);
+        WebDriverWait wait = new WebDriverWait(androidDriver, 30);
+        WebElement successMessage = wait
+                .until(ExpectedConditions.presenceOfElementLocated(By.id("alertTitle")));
         return successMessage.getText();
     }
 

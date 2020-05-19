@@ -1,4 +1,4 @@
-@Android @Profile @Navigation
+@Android @Navigation
 Feature: Navigation
 
   Background:

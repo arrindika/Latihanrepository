@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Input valid card number" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-05-19T03:11:36" hostname="dnid0663l01.local" time="31.465">
+  <properties/>
+  <testcase name="User is on E-money Sign In Page" classname="Input valid card number" time="3.43"/>
+  <testcase name="User input email &quot;ltfrzky@gmail.com&quot; on email or phone text field" classname="Input valid card number" time="0.891"/>
+  <testcase name="User input password &quot;P@ssw0rd&quot; on password text field" classname="Input valid card number" time="1.585"/>
+  <testcase name="User click sign in button on Sign In page" classname="Input valid card number" time="1.402"/>
+  <testcase name="User is on top up e-money homepage" classname="Input valid card number" time="2.198"/>
+  <testcase name="User input &quot;6032123432123210&quot; on card number text field" classname="Input valid card number" time="1.618"/>
+  <testcase name="User see the option top up amount" classname="Input valid card number" time="1.193"/>
+  <testcase name="classMethod" classname="Input valid card number" time="19.389"/>
+  <testcase name="User is on E-money Sign In Page" classname="Input valid card number" time="3.484"/>
+  <testcase name="User input email &quot;ltfrzky@gmail.com&quot; on email or phone text field" classname="Input valid card number" time="0.896"/>
+  <testcase name="User input password &quot;P@ssw0rd&quot; on password text field" classname="Input valid card number" time="2.052"/>
+  <testcase name="User click sign in button on Sign In page" classname="Input valid card number" time="0.77"/>
+  <testcase name="User is on top up e-money homepage" classname="Input valid card number" time="2.752"/>
+  <testcase name="User input &quot;6032123432123240&quot; on card number text field" classname="Input valid card number" time="1.625"/>
+  <testcase name="User see the option top up amount" classname="Input valid card number" time="1.205"/>
+  <testcase name="classMethod" classname="Input valid card number" time="18.911"/>
+  <system-out><![CDATA[
+@Android @TopUp @TUP-03
+Scenario Outline: Input valid card number                                ?[90m# src/test/resources/features/TopUp/TopUp.feature:15?[0m
+
+@Android @TopUp @TUP-03
+Scenario Outline: Input valid card number                                ?[90m# src/test/resources/features/TopUp/TopUp.feature:16?[0m
+]]></system-out>
+  <system-err><![CDATA[May 19, 2020 10:11:35 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+May 19, 2020 10:11:54 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
