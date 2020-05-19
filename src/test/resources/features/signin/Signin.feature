@@ -149,3 +149,10 @@ Feature: Sign In
     And User input password "-_123456" on password text field
     And User click sign in button on Sign In page
     Then User see error that password is not the format
+
+  @SignupButton
+  Feature: check functionality of Sign Up button
+  Scenario: User Sign In with email/phone and password
+    Given User is on E-money Sign In Page
+    When User click sign up button on Sign In Page
+    Then User is in Sign Up Page
